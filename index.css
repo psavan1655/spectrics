@@ -29,7 +29,6 @@
 }
 
 .timedesign {
-  background: #49b04f;
   color: #fff;
   margin-bottom: 10px;
   text-align: center;
@@ -37,6 +36,7 @@
 }
 
 .timedesign h3 {
+  background: #49b04f;
   margin-bottom: 0;
 }
 
@@ -48,9 +48,9 @@
  *   Copyright: GPL
  *******************************************************************************/
 
-body {
+/* body {
   direction: rtl;
-}
+} */
 
 dd {
   margin-right: 0;
@@ -1300,12 +1300,12 @@ dl.row > dd + dt {
   background: none;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #wrapper {
     padding-left: 0;
   }
   #wrapper.toggled {
-    padding-right: 250px;
+    padding-right: 150px;
   }
   #sidebar-wrapper {
     width: 0;

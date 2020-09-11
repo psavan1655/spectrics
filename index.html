@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-grid.css" />
     <link
@@ -30,7 +30,13 @@
       style="font-size: 20px; color: white; font-weight: 900"
     >
       <div class="mx-auto p-0 my-2 order-0 order-md-1 position-relative">
-        Online Test
+        <div class="timedesign">
+          Online Test
+          <h3>
+            :Timer &nbsp;&nbsp; <span id="timer" class="timerclass"></span>
+          </h3>
+          <input type="hidden" value="" name="timese" id="threeT" />
+        </div>
       </div>
       <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"
         ><span class="navbar-toggler-icon"></span
@@ -42,13 +48,6 @@
       <div id="sidebar-wrapper">
         <div class="more-images-column">
           <div class="content">
-            <div class="timedesign">
-              <h3>
-                :Timer &nbsp;&nbsp; <span id="timer" class="timerclass"></span>
-              </h3>
-              <input type="hidden" value="" name="timese" id="threeT" />
-            </div>
-
             <p>
               <img src="images/legend.png" />
             </p>
