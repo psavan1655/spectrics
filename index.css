@@ -30,9 +30,9 @@
 
 .timedesign {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
   text-align: center;
-  padding: 7px 0;
+  padding: 0.7em 0;
 }
 
 .timedesign h3 {
@@ -70,7 +70,7 @@ figure {
 
 .list-inline-item:not(:last-child) {
   margin-right: 0;
-  margin-left: 5px;
+  margin-left: 0.5em;
 }
 
 .blockquote {
@@ -892,7 +892,7 @@ dl.row > dd + dt {
 .dropdown-menu {
   right: 0;
   float: right;
-  margin: 2px 0 0;
+  margin: 0.2em 0 0;
 }
 
 .dropdown-divider {
@@ -903,7 +903,7 @@ dl.row > dd + dt {
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group {
-  margin-right: -1px;
+  margin-right: -0.1em;
 }
 
 .btn-toolbar {
@@ -1007,19 +1007,19 @@ dl.row > dd + dt {
   margin-right: 1rem;
 }
 
-@media (max-width: 543px) {
+@media (min-width: 543px) {
   .navbar-toggleable .navbar-nav .nav-item {
     margin-right: 0;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .navbar-toggleable-sm .navbar-nav .nav-item {
     margin-right: 0;
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
   .navbar-toggleable-md .navbar-nav .nav-item {
     margin-right: 0;
   }
@@ -1260,7 +1260,7 @@ dl.row > dd + dt {
   width: 250px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: outside;
 }
 
 .sidebar-nav li {
@@ -1300,7 +1300,7 @@ dl.row > dd + dt {
   background: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #wrapper {
     padding-left: 0;
   }
@@ -1311,12 +1311,49 @@ dl.row > dd + dt {
     width: 0;
   }
   #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 25 em;
   }
   #page-content-wrapper {
   }
   #wrapper.toggled #page-content-wrapper {
-    position: relative;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .collapsing {
+    overflow: hidden !important;
   }
 }
