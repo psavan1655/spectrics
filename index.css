@@ -1320,13 +1320,3 @@ dl.row > dd + dt {
     margin-right: 0;
   }
 }
-
-@viewport {
-  zoom: 1;
-  width: extend-to-zoom;
-}
-
-@-ms-viewport {
-  width: extend-to-zoom;
-  zoom: 1;
-}
